@@ -1,0 +1,118 @@
+*{
+    border:0;
+    margin:0;
+    padding:0;}
+
+body {
+    margin:0;
+    padding:0;
+   
+    background-color: #226d5f; 
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: inset 0 0 16px 7px rgba(0, 0, 0, 0.8);
+    height:100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+}
+
+
+a {
+    color: #00bfff; 
+    text-decoration: none;
+}
+a:hover {
+    color: #1e90ff; 
+}
+
+.main{
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+}
+
+.btn {
+    background-color: #333333; 
+    color: #ffffff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #555555;
+}
+
+.title {
+    font-size: 66px;
+    color: black;
+    font-weight: bold; /* Make the text bold */
+    text-align: center;
+    margin-top: 30px; /* Adjust as needed */
+    text-shadow: 2px 2px 2px #333333;
+}
+.subtitle {
+    font-size: 26px;
+    color: whitesmoke;
+    font-weight: bold; /* Make the text bold */
+    text-align: center;
+    margin-bottom: 20px; /* Adjust as needed */
+    text-shadow: 2px 2px 4px black;
+}
+.highlight{
+    color: red;
+}
+
+
+.image-hover{
+    margin:auto;
+    height : 350px;
+    width: auto;
+    -webkit-filter: drop-shadow(1px 1px 1px #222);
+    filter: drop-shadow(1px 1px 1px #222);
+    transition: filter 0.2s, transform 0.2s;
+   
+}
+
+.image-hover:hover{
+    transform: translateY(-5px); /* Move the image up slightly on hover */
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    transition: transform 0.2s, filter 0.2s;
+   
+}
+
+.smaller-image{
+    height: 150px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border: solid 5px #cac451;
+    margin:auto;
+    padding:30px;
+
+    margin-top: 50px;
+}
+
+.container-row{
+    display: flex;
+    flex-direction: row;
+    margin :auto;
+}
+
+.back-btn{
+    position: absolute;
+    height:90px;
+    width:90px;
+    margin : 15px;
+    transition: filter 0.2s;
+}
+
+.back-btn:hover{
+    filter: invert(100);
+}
