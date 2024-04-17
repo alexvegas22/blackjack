@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../style/odds.css">
     <title>Odd Calculator</title>
 </head>
 
-<body>
+<body onload="spawnDeck()">
   <div class="main">
-    <img src="./assets/back.png" class="back-btn" onclick="backToMenu()">
+    <img src="../assets/back.png" class="back-btn" onclick="backToMenu()">
     
     <div class="title" style="color:whitesmoke;">Odds</div>
     <div class="container">
@@ -19,7 +19,9 @@
     <div class="container">
       <h3>Your Hand</h3>
     </div>
+    <div id="card-selection" class="card-selection">
+    </div>
   </div>
-<script src="counter.js"></script>
+<script src="../counter.js"></script>
 </body>
 </html>
